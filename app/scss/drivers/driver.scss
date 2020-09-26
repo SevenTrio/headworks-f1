@@ -1,0 +1,101 @@
+.driver {
+	@include row-flex();
+	margin-top: 102px;
+}
+
+.driver__wrapper {
+	@include col();
+	@include size(9);
+	@include shift-left(0);
+	@include shift-right(3);
+}
+
+.driver__wrapper_revers {
+	@include shift-left(1);
+	@include shift-right(2);
+}
+
+.driver__container {
+	@include row-flex();
+	padding: 16px 0;	
+	&:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 24px);
+  	top: -16px;
+  	left: 12px;
+    height: 2px;
+    background-color: #BDBDBD;
+	}
+}
+
+.driver__image {
+	@include col();
+	@include size(5.33333332);
+	height: auto;
+}
+
+.driver__info {
+	@include col();
+	@include size(6.66666665);
+	display: flex;
+	flex-direction: column;
+}
+
+.driver__basic-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.driver__rank {
+	display: flex;
+	justify-content: start;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 24px;
+	color: $gray_2;
+}
+
+.driver__rank_revers {
+	justify-content: flex-end;
+}
+
+.driver__name {
+	display: flex;
+	justify-content: start;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 56px;
+	color: $gray_1;
+}
+
+.driver__name_revers {
+	justify-content: flex-end;
+}
+
+.driver__detailed-info {
+	@include row-flex();
+	display: flex;
+	margin-top: auto;
+}
+
+.driver-details__column {
+	font-size: 16px;
+	line-height: 24px;
+	b {
+		font-weight: 600;
+	}
+}
+
+.driver-details__column_type_1 {
+	@include col();
+	@include size(4.8);
+}
+
+.driver-details__column_type_2 {
+	@include col();
+	@include size(7.2);
+}

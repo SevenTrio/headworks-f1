@@ -1,0 +1,25 @@
+.header-upper {
+	display: flex;
+	width: 100%;
+	height: 56px;
+	color: $gray_6;
+	background-color: $gray_1;
+}
+
+.header-upper__wrapper {
+	@include wrapper();
+	display: flex;
+	flex: 1 0 auto;
+	align-items: center;
+}
+
+.header-upper__menu {
+	margin-left: auto;
+}
+
+.header-upper__contact {
+	margin-left: 48px;
+}
+
+@import "contact.scss";
+@import "menu.scss";

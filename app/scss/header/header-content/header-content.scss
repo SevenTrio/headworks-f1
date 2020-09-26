@@ -1,0 +1,9 @@
+.header-content {
+	position: relative;
+	height: 400px;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url("../img/hw-header-background.jpg");
+}
+
+@import "company.scss";

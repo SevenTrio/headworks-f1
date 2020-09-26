@@ -1,5 +1,28 @@
 // only imports here
+@import 'reset';
+@import 'config';
+@import 'smart-grid';
 
 // start here with normalizer and global styles
+body {
+	position: relative;
+	overflow-x: hidden;
+	// box-sizing: border-box;
+	min-width: 320px;
+	font-family: $titillium;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+}
 
 // put here other imports
+@import 'header/header.scss';
+@import 'logo/logo.scss';
+@import 'about/about.scss';
+@import 'drivers/drivers.scss';
+@import 'car/car.scss';
+@import 'footer/footer.scss';
+
+
+
+@import 'test.scss';

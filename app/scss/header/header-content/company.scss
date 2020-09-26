@@ -1,0 +1,52 @@
+.company {
+	@include wrapper();
+	height: 100%;
+}
+
+.company__wrapper {
+	@include row-flex();
+	height: 100%;
+}
+
+.company__text-container {
+	@include shift-left(1);
+	margin-top: 88px;
+}
+
+.company__description {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 32px;
+	color: $gray_1;
+}
+
+.company__headline {
+	margin: 8px 0;
+	font-size: 88px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 66px;
+	color: $accent;
+}
+
+.company__tagline {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+	text-align: right;
+	color: $gray_1;
+}
+
+.company__car-container {
+	@include col();
+	@include size(6);
+	@include shift-left(5);
+	align-self: flex-end;
+	transform: translate(0, 32px);
+}
+
+.company__car-img {
+	width: 100%;
+	height: auto;
+}

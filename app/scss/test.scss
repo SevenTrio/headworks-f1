@@ -1,0 +1,15 @@
+.test__wrapper {
+	@include wrapper();
+}
+
+.test__container {
+	@include row-flex();
+}
+
+.test__block {
+	@include col();
+	@include size(5);
+
+	height: 100px;
+	background-color: #000;
+}

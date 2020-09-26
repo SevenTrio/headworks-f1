@@ -1,0 +1,16 @@
+.contact__button {
+	height: 30px;
+	border: none;
+	padding: 0 16px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: $gray_6;
+	background-color: $accent;
+	transition: background-color 0.2s ease-in-out;
+
+	&:hover {
+		background-color: darken($accent, 5%);
+	}
+}

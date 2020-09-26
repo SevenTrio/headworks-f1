@@ -1,0 +1,33 @@
+.achievements {
+	@include col();
+	// @include size(6);
+	@include u-size(6, 12, 6px);
+}
+
+.achievements__wrapper {
+	position: relative;
+}
+
+.achievements__image {
+	width: 100%;
+	height: auto;
+}
+
+.achievements__list {
+	position: absolute;
+	left: 36px;
+	bottom: 24px;
+	z-index: 10;
+}
+
+.achievements__list-item {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 24px;
+	color: $gray_6;
+	&:before {
+		content: "-";
+		padding-right: 8px;
+	}
+}

@@ -1,0 +1,98 @@
+.car {
+	@include wrapper();
+
+	overflow: hidden;
+	margin-top: 150px;
+}
+
+.car__headline {
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 64px;
+	color: $accent;
+	&:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin-right: -100%;
+    right: -32px;
+    background-color: $accent;
+	}
+}
+
+.car__wrapper {
+	@include row-flex();	
+}
+
+.car__shift-wrapper {
+	@include col();
+	@include size(11);
+	@include shift-left(1);
+
+}
+
+.car__container {
+	@include row-flex();
+	padding: 40px 0;
+}
+
+.car__image-wrapper {
+	@include col();
+	@include size(9.81818181);
+	position: relative;
+}
+
+.car__image {
+	width: 100%;
+	height: auto;
+}
+
+.car__image-description {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 18px 80px 18px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	background-color: rgba(#F2F2F2, 0.4);
+}
+
+.car__statistics {
+	@include col();
+	@include size(2.18181819);
+	margin-top: 80px;
+}
+
+.car-statistics__list-item {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.car__details {
+	@include col();
+	@include size(8.72727272);
+	margin-top: 48px;
+}
+
+.car-details__container {
+	@include row-flex();	
+}
+
+.car-details__column {
+	@include col();
+	@include size(6);
+}
+
+.car-details__list-item {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}

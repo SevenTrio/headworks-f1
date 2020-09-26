@@ -1,0 +1,43 @@
+.about {
+	@include wrapper();
+	display: flex;
+	position: relative;
+	margin-top: 192px;
+	&:before {
+		position: absolute;
+		top: -34px;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		content: "About";
+		font-size: 48px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 64px;
+		text-align: center;
+		color: $accent;
+	}
+}
+
+.about__wrapper {
+	@include row-flex();
+	margin-left: -48px;
+}
+
+.about__description {
+	@include col();
+	@include shift-left(1);
+	@include shift-right(1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: calc(100% / 12 * 4 - 12px - 36px) !important;
+}
+
+.about__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+@import 'achievements.scss';

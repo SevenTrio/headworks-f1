@@ -1,17 +1,230 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HeadWorks F1</title>
   <link rel="stylesheet" href="css/styles.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
   <script defer src="js/scripts.min.js"></script>
 </head>
+
 <body>
-  Hello World!
-<!--Happy coding-->
+  <header class="header">
+    <div class="header__upper header-upper">
+      <div class="header-upper__wrapper">
+
+        <div class="header-upper__logo logo">
+          <a class="logo__link" href="/">
+            <img class="logo__img" src="img/hw-logo.svg" alt="HeadRacing">
+          </a>
+        </div>
+
+        <div class="header-upper__menu menu">
+          <nav>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Drivers</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Car</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-upper__contact contact">
+          <button class="contact__button">Contact</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header__content header-content">
+      <div class="header-content__company company">
+        <div class="company__wrapper">
+          <div class="company__text-container">
+            <p class="company__description">Racing Team</p>
+            <h1 class="company__headline">HeadWorks F1</h1>
+            <p class="company__tagline">Code clean, care fast</p>
+          </div>
+          <div class="company__car-container">
+            <img src="img/hw-header-car.png" alt="" class="company__car-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="about__wrapper">
+      <div class="about__achievements achievements">
+        <div class="achievements__wrapper">
+          <img src="img/hw-about-background.jpg" alt="" class="achievements__image">
+          <ul class="achievements__list">
+            <li class="achievements__list-item">153 races</li>
+            <li class="achievements__list-item">25 podiums</li>
+            <li class="achievements__list-item">6 wins</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__description">
+        <p class="about__text">We are It company that passioned about motorsport. Teamwork, innovations, and modern approaches - principles we are building our team around.</p>
+        <br>
+        <p class="about__text">With the challenge of making racing cars faster, lighter, and more reliable, Headworks Motosport was born: the company that specializes in the development of innovative methods and the production of high-quality components that never existed before.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="drivers">
+    <div class="drivers__headline">Drivers</div>
+
+    <div class="drivers__driver driver">
+      <div class="driver__wrapper driver__wrapper_revers">
+        <div class="driver__container">
+
+          <img src="img/hw-driver-stig-2.jpg" alt="" class="driver__image">
+
+          <div class="driver__info">
+            <div class="basic-info">
+              <span class="driver__rank driver__rank_revers">Fulstack racing driver</span>
+              <span class="driver__name driver__name_revers">Javan Scripter</span>
+            </div>
+
+            <div class="driver__detailed-info driver-details">
+              <div class="driver-details__column driver-details__column_type_1">
+                <ul class="driver-details__list">
+                  <li class="driver-details__list-item"><b>Races:</b> 122</li>
+                  <li class="driver-details__list-item"><b>Pole-positions:</b> 9</li>
+                  <li class="driver-details__list-item"><b>Podiums:</b> 15</li>
+                </ul>
+              </div>
+
+              <div class="driver-details__column driver-details__column_type_2">
+                <ul class="driver-details__list">
+                  <li class="driver-details__list-item"><b>Wins:</b> 3</li>
+                  <li class="driver-details__list-item"><b>Date of birth:</b> 1994/12/10</li>
+                  <li class="driver-details__list-item"><b>Place of birth:</b> Madrid, Spain</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="drivers__driver driver">
+      <div class="driver__wrapper">
+        <div class="driver__container">
+
+          <div class="driver__info">
+            <div class="basic-info">
+              <span class="driver__rank">Fulstack racing driver</span>
+              <span class="driver__name">Javan Scripter</span>
+            </div>
+
+            <div class="driver__detailed-info driver-details">
+              <div class="driver-details__column driver-details__column_type_1">
+                <ul class="driver-details__list">
+                  <li class="driver-details__list-item"><b>Races:</b> 122</li>
+                  <li class="driver-details__list-item"><b>Pole-positions:</b> 9</li>
+                  <li class="driver-details__list-item"><b>Podiums:</b> 15</li>
+                </ul>
+              </div>
+
+              <div class="driver-details__column driver-details__column_type_2">
+                <ul class="driver-details__list">
+                  <li class="driver-details__list-item"><b>Wins:</b> 3</li>
+                  <li class="driver-details__list-item"><b>Date of birth:</b> 1994/12/10</li>
+                  <li class="driver-details__list-item"><b>Place of birth:</b> Madrid, Spain</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <img src="img/hw-driver-stig-1.jpg" alt="" class="driver__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="car">
+    <div class="car__headline">Car</div>
+
+    <div class="car__wrapper">
+      <div class="car__shift-wrapper">
+        <div class="car__container">
+          <div class="car__image-wrapper">
+            <img src="img/hw-car-car_image.jpg" alt="" class="car__image">
+            <div class="car__image-description">
+              <span>Power 950–1,000 horsepower (710–750 kW)</span>
+              <span>Weight 733 kg (1,616.0 lb)</span>
+            </div>
+          </div>
+
+          <div class="car__statistics car-statistics">
+            <ul class="car-statistics__list">
+              <li class="car-statistics__list-item">Year: 2020</li>
+              <li class="car-statistics__list-item">Wins: 3</li>
+              <li class="car-statistics__list-item">Poles: 5</li>
+              <li class="car-statistics__list-item">Points: 78</li>
+            </ul>
+          </div>
+
+          <div class="car__details car-details">
+            <div class="car-details__container">
+              <div class="car-details__column">
+                <ul class="car-details__list">
+                  <li class="car-details__list-item">Width 2,000 mm (79 in)</li>
+                  <li class="car-details__list-item">Height 950 mm (37 in)</li>
+                  <li class="car-details__list-item">Wheelbase 3,726 mm (146.7 in)</li>
+                </ul>
+              </div>
+              <div class="car-details__column">
+                <ul class="car-details__list">
+                  <li class="car-details__list-item">0 to 100 km/h (62 mph): 2.4 seconds</li>
+                  <li class="car-details__list-item">0 to 200 km/h (124 mph): 4.4 seconds</li>
+                  <li class="car-details__list-item">0 to 300 km/h (186 mph): 8.4 seconds</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__info">
+          <div class="footer__logo logo">
+            <a class="logo__link" href="/">
+              <img class="logo__img" src="img/hw-logo.svg" alt="HeadRacing">
+            </a>
+          </div>
+          <div class="footer__about-company">
+            <span>We are It company that passioned about motorsport. Teamwork, innovations, and modern approaches - principles we are building our team around.</span>
+          </div>
+        </div>
+        <div class="footer__menu footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">About</a></li>
+            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">Drivers</a></li>
+            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">Car</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact-form">
+          <form action="" class="contact-form">
+            <input type="text" placeholder="Email" class="contact-form__input contact-form__email">
+            <textarea placeholder="Message" class="contact-form__input contact-form__message"></textarea>
+            <button type="submit" class="contact-form__submit-button">CONTACT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
