@@ -7,7 +7,6 @@
 body {
 	position: relative;
 	overflow-x: hidden;
-	// box-sizing: border-box;
 	min-width: 320px;
 	font-family: $titillium;
 	font-size: $fontsize;
@@ -22,7 +21,3 @@ body {
 @import 'drivers/drivers.scss';
 @import 'car/car.scss';
 @import 'footer/footer.scss';
-
-
-
-@import 'test.scss';
