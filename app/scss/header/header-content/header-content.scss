@@ -4,6 +4,14 @@
 	background-size: cover;
 	background-position: bottom;
 	background-image: url("../img/hw-header-background.jpg");
+	background-repeat: no-repeat;
+
+	@include to($break_md) {
+		height: 184px;
+		background-size: auto 104px;
+		background-position: top;
+		background-repeat: repeat-x;
+	}
 }
 
 @import "company.scss";

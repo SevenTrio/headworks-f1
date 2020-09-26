@@ -1,6 +1,10 @@
 .driver {
 	@include row-flex();
 	margin-top: 102px;
+
+	@include to($break_md) {
+		margin-top: 50px;
+	}
 }
 
 .driver__wrapper {
@@ -8,11 +12,23 @@
 	@include size(9);
 	@include shift-left(0);
 	@include shift-right(3);
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		@include shift-left(0);
+		@include shift-right(0);
+	}
 }
 
 .driver__wrapper_revers {
 	@include shift-left(1);
 	@include shift-right(2);
+
+	@include to($break_md) {
+		@include shift-left(0);
+		@include shift-right(0);
+	}
 }
 
 .driver__container {
@@ -27,6 +43,14 @@
   	left: 12px;
     height: 2px;
     background-color: #BDBDBD;
+
+		@include to($break_sm) {
+			display: none;
+		}
+	}
+
+	@include to($break_sm) {
+		padding: 0;
 	}
 }
 
@@ -34,6 +58,23 @@
 	@include col();
 	@include size(5.33333332);
 	height: auto;
+
+	@include to($break_sm) {
+		@include col();
+		@include size(12);
+	}
+}
+
+.driver__image_revers {
+	@include to($break_sm) {
+		display: none;
+	}
+}
+
+.driver__image_for-mobile {
+	@include from($break_sm + 1px) {
+		display: none;
+	}
 }
 
 .driver__info {
@@ -41,6 +82,11 @@
 	@include size(6.66666665);
 	display: flex;
 	flex-direction: column;
+
+	@include to($break_sm) {
+		@include col();
+		@include size(12);
+	}
 }
 
 .driver__basic-info {
@@ -56,10 +102,23 @@
 	font-weight: 400;
 	line-height: 24px;
 	color: $gray_2;
+
+	@include to($break_sm) {
+		margin-top: 16px;
+		border-bottom: 1px solid #BDBDBD;
+		font-size: 14px;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 32px;
+	}
 }
 
 .driver__rank_revers {
 	justify-content: flex-end;
+
+	@include to($break_sm) {
+		justify-content: start;
+	}
 }
 
 .driver__name {
@@ -70,16 +129,31 @@
 	font-weight: 700;
 	line-height: 56px;
 	color: $gray_1;
+
+	@include to($break_sm) {
+		font-size: 28px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 64px;
+	}
 }
 
 .driver__name_revers {
 	justify-content: flex-end;
+
+	@include to($break_sm) {
+		justify-content: start;
+	}
 }
 
 .driver__detailed-info {
 	@include row-flex();
 	display: flex;
 	margin-top: auto;
+
+	@include to($break_sm) {
+		margin-top: 12px;
+	}
 }
 
 .driver-details__column {
@@ -87,6 +161,15 @@
 	line-height: 24px;
 	b {
 		font-weight: 600;
+	}
+
+	@include to($break_sm) {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 20px;
+		b {
+			font-weight: 700;
+		}
 	}
 }
 

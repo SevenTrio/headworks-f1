@@ -2,7 +2,7 @@
 	@include wrapper();
 	display: flex;
 	position: relative;
-	margin-top: 192px;
+	margin-top: 184px;
 	&:before {
 		position: absolute;
 		top: -34px;
@@ -16,12 +16,37 @@
 		line-height: 64px;
 		text-align: center;
 		color: $accent;
+
+		@include to($break_md) {
+			left: 16px;
+			width: calc(100% - 32px);
+			font-size: 36px;
+			font-style: italic;
+			font-weight: 700;
+			line-height: 60px;
+			text-align: left;
+		}
 	}
 }
 
 .about__wrapper {
 	@include row-flex();
 	margin-left: -48px;
+
+	@include to($break_md) {
+		margin-left: -12px;
+	}
+}
+
+.about__achievements {
+	@include col();
+	// @include size(6);
+	@include u-size(6, 12, 6px);
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+	}
 }
 
 .about__description {
@@ -31,7 +56,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: calc(100% / 12 * 4 - 12px - 36px) !important;
+	width: calc(100% / 12 * 4 - 12px - 36px);
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		@include shift-left(0);
+		@include shift-right(0);
+		margin-top: 32px;
+	}
 }
 
 .about__text {

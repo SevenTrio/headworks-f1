@@ -3,6 +3,10 @@
 
 	overflow: hidden;
 	margin-top: 150px;
+
+	@include to($break_md) {
+		margin-top: 50px;
+	}
 }
 
 .drivers__headline {
@@ -20,6 +24,18 @@
 		margin-right: -100%;
 		right: -32px;
 		background-color: $accent;
+
+		@include to($break_md) {
+			height: 3px;
+			right: -16px;
+		}
+	}
+
+	@include to($break_md) {
+		font-size: 36px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 64px;
 	}
 }
 

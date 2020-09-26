@@ -13,13 +13,26 @@
 	align-items: center;
 }
 
+.header-upper__hamburger-menu {
+
+}
+
 .header-upper__menu {
 	margin-left: auto;
+
+	@include to($break_md) {
+		display: none;
+	}
 }
 
 .header-upper__contact {
 	margin-left: 48px;
+	
+	@include to($break_md) {
+		margin-left: auto;
+	}
 }
 
+@import "hamburger-menu.scss";
 @import "contact.scss";
 @import "menu.scss";

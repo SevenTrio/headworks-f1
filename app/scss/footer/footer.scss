@@ -2,6 +2,11 @@
 	margin-top: 80px;
 	padding: 44px 0;
 	background-color: $gray_1;
+
+	@include to($break_sm) {
+		margin-top: 56px;
+		padding: 30px 0;
+	}
 }
 
 .footer__wrapper {
@@ -15,10 +20,19 @@
 .footer__info {
 	@include col();
 	@include size(5);
+
+	@include to($break_sm) {
+		@include col();
+		@include size(12);
+	}
 }
 
 .footer__logo {
 	height: 56px;
+
+	@include to($break_sm) {
+		height: 48px;
+	}
 }
 
 .footer__about-company {
@@ -32,14 +46,39 @@
 	@include col();
 	@include size(2);
 	@include shift-left(1);
+
+	@include to($break_sm) {
+		@include col();
+		@include size(12);
+		@include shift-left(0);
+	}
+}
+
+.footer-menu__list {
+	display: flex;
+	flex-direction: column;
+	padding-right: 16px;
+
+	@include to($break_sm) {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 30px 0;
+	}
 }
 
 .footer-menu__list-item {
+	display: flex;
 	margin-bottom: 8px;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 32px;
 	color: $gray_6;
+
+	@include to($break_sm) {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 32px;
+	}
 }
 
 .footer-menu__link {
@@ -55,6 +94,12 @@
 	@include col();
 	@include size(3);
 	@include shift-left(1);
+
+	@include to($break_sm) {
+		@include col();
+		@include size(12);
+		@include shift-left(0);
+	}
 }
 
 .contact-form__input {
@@ -69,11 +114,21 @@
 	&::placeholder {
 		color: $gray_6;
 	}
+
+	@include to($break_sm) {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 34px;
+	}
 }
 
 .contact-form__email {
 	height: 30px;
 	margin-bottom: 10px;
+
+	@include to($break_sm) {
+		height: 36px;
+	}
 }
 
 .contact-form__message {
@@ -95,5 +150,13 @@
 	background-color: $gray_2;
 	&:hover {
 		background-color: lighten($gray_2, 5%);
+	}
+
+	@include to($break_sm) {
+		height: 44px;
+		padding: 5px 8px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 34px;
 	}
 }

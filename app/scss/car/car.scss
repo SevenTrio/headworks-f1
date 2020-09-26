@@ -3,6 +3,10 @@
 
 	overflow: hidden;
 	margin-top: 150px;
+
+	@include to($break_md) {
+		margin-top: 50px;
+	}
 }
 
 .car__headline {
@@ -20,6 +24,18 @@
     margin-right: -100%;
     right: -32px;
     background-color: $accent;
+
+		@include to($break_md) {
+			height: 3px;
+			right: -16px;
+		}
+	}
+
+	@include to($break_md) {
+		font-size: 36px;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 64px;
 	}
 }
 
@@ -32,17 +48,32 @@
 	@include size(11);
 	@include shift-left(1);
 
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		@include shift-left(0);
+	}
 }
 
 .car__container {
 	@include row-flex();
 	padding: 40px 0;
+
+	@include to($break_md) {
+		position: relative;
+		padding: 68px 0 0 0;
+	}
 }
 
 .car__image-wrapper {
 	@include col();
 	@include size(9.81818181);
 	position: relative;
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+	}
 }
 
 .car__image {
@@ -61,12 +92,29 @@
 	font-weight: 600;
 	line-height: 24px;
 	background-color: rgba(#F2F2F2, 0.4);
+
+	@include to($break_md) {
+		position: relative;
+		margin-top: 10px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 20px;
+		background: none;
+	}
 }
 
 .car__statistics {
 	@include col();
 	@include size(2.18181819);
 	margin-top: 80px;
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		position: absolute;
+		top: -56px;
+	}
 }
 
 .car-statistics__list-item {
@@ -74,12 +122,24 @@
 	font-style: italic;
 	font-weight: 700;
 	line-height: 24px;
+	@include to($break_md) {
+		font-size: 12px;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 16px;
+	}
 }
 
 .car__details {
 	@include col();
 	@include size(8.72727272);
 	margin-top: 48px;
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		margin-top: 40px;
+	}	
 }
 
 .car-details__container {
@@ -89,10 +149,25 @@
 .car-details__column {
 	@include col();
 	@include size(6);
+
+	@include to($break_md) {
+		@include col();
+		@include size(12);
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}	
 }
 
 .car-details__list-item {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+
+	@include to($break_md) {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+	}		
 }

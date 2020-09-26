@@ -11,6 +11,11 @@
 .company__text-container {
 	@include shift-left(1);
 	margin-top: 88px;
+
+	@include to($break_md) {
+		@include shift-left(0);
+		margin-top: 56px;
+	}
 }
 
 .company__description {
@@ -19,6 +24,12 @@
 	font-weight: 700;
 	line-height: 32px;
 	color: $gray_1;
+
+	@include to($break_md) {
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 21px;
+	}
 }
 
 .company__headline {
@@ -28,6 +39,13 @@
 	font-weight: 700;
 	line-height: 66px;
 	color: $accent;
+
+	@include to($break_md) {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 42px;
+	}	
 }
 
 .company__tagline {
@@ -36,6 +54,12 @@
 	line-height: 32px;
 	text-align: right;
 	color: $gray_1;
+
+	@include to($break_md) {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 21px;
+	}
 }
 
 .company__car-container {
@@ -44,6 +68,12 @@
 	@include shift-left(5);
 	align-self: flex-end;
 	transform: translate(0, 32px);
+
+	@include to($break_sm) {
+		@include col();
+		@include size(9);
+		@include shift-left(0);
+	}
 }
 
 .company__car-img {
