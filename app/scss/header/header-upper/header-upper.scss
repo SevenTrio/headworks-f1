@@ -17,6 +17,14 @@
 	height: 30px !important;
 }
 
+.header-upper__hamburger-menu {
+	display: none;
+
+	@include to($break_md) {
+		display: block;
+	}
+}
+
 .header-upper__menu {
 	margin-left: auto;
 
