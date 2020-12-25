@@ -26,16 +26,18 @@
 }
 
 .header-upper__menu {
-	margin-left: auto;
+  &.menu {
+    margin-left: auto;
 
-	@include to($break_md) {
-		display: none;
+	  @include to($break_md) {
+      display: none;
+    }
 	}
 }
 
 .header-upper__contact {
 	margin-left: 48px;
-	
+
 	@include to($break_md) {
 		margin-left: auto;
 	}

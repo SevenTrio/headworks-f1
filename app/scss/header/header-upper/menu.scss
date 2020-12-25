@@ -1,18 +1,28 @@
+.menu {
+  display: flex;
+  height: 100%;
+}
+
 .menu__list {
+  display: flex;
+  height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 .menu__item {
-	display: inline-block;
 	position: relative;
-	margin-right: 48px;
+	margin-right: 32px;
 	&:last-child {
 		margin-right: 0;
 	}
 }
 
 .menu__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
 	text-decoration: none;
 	color: inherit;
 	transition: color 0.2s ease-in-out;

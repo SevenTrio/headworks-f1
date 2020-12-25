@@ -4,6 +4,10 @@
 @import 'smart-grid';
 
 // start here with normalizer and global styles
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	position: relative;
 	overflow-x: hidden;
