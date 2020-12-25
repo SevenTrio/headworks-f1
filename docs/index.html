@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="img/favicon.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HeadWorks F1</title>
@@ -29,12 +30,12 @@
                   <img src="img/hw-close-button.svg" alt="" class="hamburger-menu__image hamburger-menu__image_close">
                 </div>
                 <div class="hamburger-menu__logo logo">
-                  <a class="logo__link" href="/">
+                  <a class="logo__link" href="">
                     <img class="logo__img" src="img/hw-logo.svg" alt="HeadRacing">
                   </a>
                 </div>
                 <div class="hamburger-menu__contact contact">
-                  <button class="contact__button">Contact</button>
+                  <a href="#contact" class="contact__button">Contact</a>
                 </div>
               </div>
 
@@ -42,24 +43,24 @@
                 <div class="hamburger-menu__menu">
                   <ul class="hamburger-menu__menu-list">
                     <li class="hamburger-menu__menu-item">
-                      <a href="" class="hamburger-menu__menu-link">About</a>
+                      <a href="#about" class="hamburger-menu__menu-link">About</a>
                     </li>
                     <li class="hamburger-menu__menu-item">
-                      <a href="" class="hamburger-menu__menu-link">Drivers</a>
+                      <a href="#drivers" class="hamburger-menu__menu-link">Drivers</a>
                     </li>
                     <li class="hamburger-menu__menu-item">
-                      <a href="" class="hamburger-menu__menu-link">Car</a>
+                      <a href="#car" class="hamburger-menu__menu-link">Car</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              
-            </div>     
+
+            </div>
           </div>
         </div>
 
         <div class="header-upper__logo logo">
-          <a class="logo__link" href="/">
+          <a class="logo__link" href="">
             <img class="logo__img" src="img/hw-logo.svg" alt="HeadRacing">
           </a>
         </div>
@@ -67,15 +68,15 @@
         <div class="header-upper__menu menu">
           <nav>
             <ul class="menu__list">
-              <li class="menu__item"><a href="" class="menu__link">About</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Drivers</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Car</a></li>
+              <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="#drivers" class="menu__link">Drivers</a></li>
+              <li class="menu__item"><a href="#car" class="menu__link">Car</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="header-upper__contact contact">
-          <button class="contact__button">Contact</button>
+          <a href="#contact" class="contact__button">Contact</a>
         </div>
 
       </div>
@@ -97,7 +98,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="about__wrapper">
       <div class="about__achievements achievements">
         <div class="achievements__wrapper">
@@ -117,7 +118,7 @@
     </div>
   </section>
 
-  <section class="drivers">
+  <section id="drivers" class="drivers">
     <div class="drivers__headline">Drivers</div>
 
     <div class="drivers__driver driver">
@@ -192,7 +193,7 @@
     </div>
   </section>
 
-  <section class="car">
+  <section id="car" class="car">
     <div class="car__headline">Car</div>
 
     <div class="car__wrapper">
@@ -243,7 +244,7 @@
       <div class="footer__container">
         <div class="footer__info">
           <div class="footer__logo logo">
-            <a class="logo__link" href="/">
+            <a class="logo__link" href="">
               <img class="logo__img" src="img/hw-logo.svg" alt="HeadRacing">
             </a>
           </div>
@@ -253,17 +254,17 @@
         </div>
         <div class="footer__menu footer-menu">
           <ul class="footer-menu__list">
-            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">About</a></li>
-            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">Drivers</a></li>
-            <li class="footer-menu__list-item"><a href="" class="footer-menu__link">Car</a></li>
+            <li class="footer-menu__list-item"><a href="#about" class="footer-menu__link">About</a></li>
+            <li class="footer-menu__list-item"><a href="#drivers" class="footer-menu__link">Drivers</a></li>
+            <li class="footer-menu__list-item"><a href="#car" class="footer-menu__link">Car</a></li>
           </ul>
         </div>
         <div class="footer__contact-form">
-          <form action="" class="contact-form">
+          <div id="contact" class="contact-form">
             <input type="text" placeholder="Email" class="contact-form__input contact-form__email">
             <textarea placeholder="Message" class="contact-form__input contact-form__message"></textarea>
-            <button type="submit" class="contact-form__submit-button">CONTACT</button>
-          </form>
+            <button class="contact-form__submit-button">CONTACT</button>
+          </div>
         </div>
       </div>
     </div>
